@@ -112,19 +112,26 @@ http://127.0.0.1:5000
 
 ### 🏠 Home Page
 
-(Add Home Page Screenshot)
+<img width="1895" height="950" alt="Screenshot 2026-07-03 221832" src="https://github.com/user-attachments/assets/c9263832-5c79-49d0-95ef-2b977c2aedc9" />
+
 
 ### 📝 Loan Prediction Form
 
-(Add Input Page Screenshot)
+<img width="1901" height="949" alt="Screenshot 2026-07-03 221854" src="https://github.com/user-attachments/assets/f26abc79-4ea8-404f-bc62-b32cd9497d9a" />
+
 
 ### ✅ Loan Approved
 
-(Add Approved Screenshot)
+<img width="1892" height="945" alt="Screenshot 2026-07-03 221918" src="https://github.com/user-attachments/assets/986dc96b-6c1d-470a-95fc-42574f4bfec1" />
+### 📝 Loan Prediction Form
+<img width="1883" height="894" alt="Screenshot 2026-07-03 221934" src="https://github.com/user-attachments/assets/b95348a0-8c9a-44eb-9f65-710226577f12" />
+
+
 
 ### ❌ Loan Not Approved
 
-(Add Rejected Screenshot)
+<img width="1883" height="904" alt="Screenshot 2026-07-03 221952" src="https://github.com/user-attachments/assets/0ed49cbe-283a-45b4-9b0a-279b6696ba2b" />
+
 
 ---
 
@@ -132,7 +139,7 @@ http://127.0.0.1:5000
 
 Demo Link:
 
-(Add your YouTube or Google Drive link here)
+https://drive.google.com/file/d/1yHjopVu37rdStqvk9a5Q_a7AlLyCZ_RG/view?usp=drivesdk
 
 ---
 
