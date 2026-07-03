@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Smart Lender</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',filename='css/input.css') }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.6),
+rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600');
+
+background-size:cover;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.card{
+
+width:700px;
+
+padding:50px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+text-align:center;
+
+color:white;
+
+box-shadow:0 15px 35px rgba(0,0,0,.4);
+
+}
+
+h1{
+
+font-size:55px;
+
+margin-bottom:15px;
+
+}
+
+h2{
+
+font-size:25px;
+
+margin-bottom:20px;
+
+font-weight:300;
+
+}
+
+p{
+
+font-size:18px;
+
+line-height:30px;
+
+margin-bottom:35px;
+
+}
+
+button{
+
+padding:18px 40px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:10px;
+
+background:#27ae60;
+
+color:white;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+button:hover{
+
+background:#219150;
+
+transform:scale(1.08);
+
+}
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+margin-top:40px;
+
+gap:20px;
+
+font-size:18px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🏦 Smart Lender</h1>
+
+<h2>AI Powered Loan Approval Prediction</h2>
+
+<p>
+
+Helping banks make faster and smarter loan approval decisions using
+Machine Learning.
+
+</p>
+
+<form action="/predict">
+
+<button>
+
+Start Prediction →
+
+</button>
+
+</form>
+
+<div class="features">
+
+<div>✔ Instant Prediction</div>
+
+<div>✔ Secure System</div>
+
+<div>✔ Machine Learning</div>
+
+<div>✔ IBM Cloud Ready</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

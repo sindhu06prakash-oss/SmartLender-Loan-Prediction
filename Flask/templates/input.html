@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Lender | Loan Prediction</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/input.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+min-height:100vh;
+padding:40px;
+
+}
+
+.container{
+
+width:900px;
+margin:auto;
+background:white;
+border-radius:20px;
+padding:35px;
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+h1{
+
+text-align:center;
+color:#0b5394;
+margin-bottom:5px;
+
+}
+
+.subtitle{
+
+text-align:center;
+color:gray;
+margin-bottom:30px;
+
+}
+
+.section{
+
+margin-top:25px;
+
+}
+
+.section h3{
+
+color:#0b5394;
+margin-bottom:15px;
+border-left:5px solid #28a745;
+padding-left:10px;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+
+}
+
+.form-group{
+
+display:flex;
+flex-direction:column;
+
+}
+
+label{
+
+font-weight:600;
+margin-bottom:6px;
+color:#333;
+
+}
+
+input,select{
+
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:15px;
+
+}
+
+input:focus,
+select:focus{
+
+outline:none;
+border:2px solid #2196F3;
+
+}
+
+button{
+
+width:100%;
+margin-top:35px;
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:20px;
+background:#28a745;
+color:white;
+cursor:pointer;
+transition:.4s;
+
+}
+
+button:hover{
+
+background:#218838;
+transform:scale(1.02);
+
+}
+
+.footer{
+
+text-align:center;
+margin-top:25px;
+color:gray;
+
+}
+
+@media(max-width:900px){
+
+.container{
+
+width:95%;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏦 Smart Lender</h1>
+
+<p class="subtitle">
+
+AI Powered Loan Approval Prediction System
+
+</p>
+
+<form action="/submit" method="POST">
+
+<div class="section">
+
+<h3>👤 Personal Information</h3>
+
+<div class="grid">
+
+<div class="form-group">
+
+<label>Gender</label>
+
+<select name="Gender">
+
+<option value="0">Male</option>
+
+<option value="1">Female</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Married</label>
+
+<select name="Married">
+
+<option value="1">Yes</option>
+
+<option value="0">No</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Dependents</label>
+
+<input type="number"
+name="Dependents"
+placeholder="Example : 1"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Education</label>
+
+<select name="Education">
+
+<option value="0">Graduate</option>
+
+<option value="1">Not Graduate</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Self Employed</label>
+
+<select name="Self_Employed">
+
+<option value="0">No</option>
+
+<option value="1">Yes</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h3>💰 Financial Information</h3>
+
+<div class="grid">
+
+<div class="form-group">
+
+<label>Applicant Income</label>
+
+<input type="number"
+name="ApplicantIncome"
+placeholder="Example : 5000"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Co Applicant Income</label>
+
+<input type="number"
+name="CoapplicantIncome"
+placeholder="Example : 2500"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Loan Amount</label>
+
+<input type="number"
+name="LoanAmount"
+placeholder="Example : 150"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Loan Amount Term</label>
+
+<input type="number"
+name="Loan_Amount_Term"
+placeholder="Example : 360"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Credit History</label>
+
+<select name="Credit_History">
+
+<option value="1">Good</option>
+
+<option value="0">Poor</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h3>🏠 Property Information</h3>
+
+<div class="grid">
+
+<div class="form-group">
+
+<label>Property Area</label>
+
+<select name="Property_Area">
+
+<option value="0">Urban</option>
+
+<option value="1">Semiurban</option>
+
+<option value="2">Rural</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+<button type="submit">
+
+🤖 Predict Loan Eligibility
+
+</button>
+
+</form>
+
+<div class="footer">
+
+Powered by Python • Flask • Machine Learning • Smart Lender
+
+</div>
+
+</div>
+
+</body>
+
+</html>
